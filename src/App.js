@@ -1,5 +1,5 @@
 import logo from './Logo.png';
-import bg from './background.png';
+import bg from './background.jpg';
 import './App.css';
 
 function App() {

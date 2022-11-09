@@ -19,13 +19,13 @@
 }
 
 .App-background {
-  position: absolute; 
+  position: absolute;
   top: 0; 
   left: 0; 
-	
-  /* Preserve aspet ratio */
-  min-width: 100%;
-  min-height: 100%;
+  
+  width:100%;
+  height:auto;
+  object-fit: cover;
 }
 
 .Menu-logo {
@@ -36,13 +36,13 @@
 }
 
 .App-header {
-  /* background-color: #282c34; */
   display:block;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
+  overflow:hidden;
 }
 
 .Menu-header {
