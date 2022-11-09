@@ -2,9 +2,24 @@
   text-align: center;
 }
 
+.Menu {
+  z-index: 99;
+  background-color: #61dafb;
+  border-radius: 6vh;
+  box-sizing: border-box;
+  margin: 3vh;
+  height: 7vh;
+  line-height: 6vh;
+}
+
 .App-logo {
-  height: 40vmin;
   pointer-events: none;
+}
+.Menu-logo {
+  pointer-events: none;
+  vertical-align: middle;
+  height: 4vh;
+  margin-left: 3vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,14 +29,20 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  /* background-color: #282c34; */
+  min-height: 0vh;
+  display:block;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.Menu-header {
+  display: inherit;
+  font-size: calc(10px + 2vmin);
+  vertical-align: middle;
 }
 
 .App-link {

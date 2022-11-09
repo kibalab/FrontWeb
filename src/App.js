@@ -1,9 +1,10 @@
-import logo from './logo.svg';
+import logo from './Logo.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      /*
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,8 +19,19 @@ function App() {
           Learn React
         </a>
       </header>
+      */
     </div>
   );
 }
 
-export default App;
+function Menu() {
+  return (
+    <div className="Menu">
+      <header className="Menu-header">
+        <img src={logo} className="Menu-logo" alt="logo" />
+      </header>
+    </div>
+  );
+}
+
+export {App, Menu};
