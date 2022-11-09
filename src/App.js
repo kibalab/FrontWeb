@@ -5,7 +5,6 @@ import './App.css';
 function App() {
   return (
     <div>
-      <Menu />
       <div className="App">
         <header className="App-header">
           <div className="App-Thumbnail">
@@ -13,6 +12,7 @@ function App() {
           </div>
         </header>
       </div>
+      <Menu />
     </div>
   );
 }
@@ -22,17 +22,17 @@ function Menu() {
     <div className="Menu">
       <div className="Menu-header">
         <img src={logo} className="Menu-logo" alt="logo" />
-        <div className="MenuItems">
-          <a className="MenuItems-item">
-            HELLO
-          </a>
-          <a className="MenuItems-item">
-            HELLO
-          </a>
-          <a className="MenuItems-item">
-            HELLO
-          </a>
-        </div>
+      </div>
+      <div className="MenuItems">
+        <a className="MenuItems-item">
+          HELLO
+        </a>
+        <a className="MenuItems-item">
+          HELLO
+        </a>
+        <a className="MenuItems-item">
+          HELLO
+        </a>
       </div>
     </div>
   );
