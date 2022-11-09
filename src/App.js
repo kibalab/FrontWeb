@@ -1,13 +1,16 @@
 import logo from './Logo.png';
+import bg from './background.png';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Menu />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+      <div className="App">
+        <header className="App-header">
+          <img src={bg} className="App-background" alt="logo" />
+        </header>
+      </div>
     </div>
   );
 }
