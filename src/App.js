@@ -4,11 +4,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      /*
+    <Menu />
       <header className="App-header">
-        
+        <img src={logo} className="App-logo" alt="logo" /> /* Why not render?? */
       </header>
-      */
     </div>
   );
 }
@@ -16,9 +15,9 @@ function App() {
 function Menu() {
   return (
     <div className="Menu">
-      <header className="Menu-header">
+      <div className="Menu-header">
         <img src={logo} className="Menu-logo" alt="logo" />
-      </header>
+      </div>
     </div>
   );
 }
