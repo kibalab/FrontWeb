@@ -8,7 +8,9 @@ function App() {
       <Menu />
       <div className="App">
         <header className="App-header">
-          <img src={bg} className="App-background" alt="logo" />
+          <div className="App-Thumbnail">
+            <img src={bg} className="App-background" alt="logo" />
+          </div>
         </header>
       </div>
     </div>
@@ -20,6 +22,17 @@ function Menu() {
     <div className="Menu">
       <div className="Menu-header">
         <img src={logo} className="Menu-logo" alt="logo" />
+        <div className="MenuItems">
+          <a className="MenuItems-item">
+            HELLO
+          </a>
+          <a className="MenuItems-item">
+            HELLO
+          </a>
+          <a className="MenuItems-item">
+            HELLO
+          </a>
+        </div>
       </div>
     </div>
   );

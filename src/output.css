@@ -4,21 +4,22 @@
 
 .Menu {
   z-index: 99;
-  
+  position: -webkit-sticky;
   position: sticky;
-    top: 1vh;
-    right: 0px;
-    
+  top: 1vh;
+  right: 0px;
   border-radius: 6vh;
   margin: 3vh;
   height: 7vh;
   line-height: 6vh;
   background-color: #000c296e;
-  backdrop-filter: blur(1vh);
+  -webkit-backdrop-filter: blur(1vh);
+          backdrop-filter: blur(1vh);
   box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.3);
-
-  animation-duration: 2s;
-  animation-name: Menu-logo-Slidein;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: Menu-logo-Slidein;
+          animation-name: Menu-logo-Slidein;
 }
 
 .MenuItems {
@@ -40,10 +41,8 @@
 .App-background {
   position:relative;
   z-index: -1;
-  top: 0; 
-  left: 0; 
-  
-  
+  top: 0;
+  left: 0;
   width:100%;
   height:auto;
   object-fit: cover;
@@ -55,9 +54,10 @@
   vertical-align: middle;
   height: 3vh;
   margin-left: 4vh;
-
-  animation-duration: 1s;
-  animation-name: Menu-logo-fadein;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: Menu-logo-fadein;
+          animation-name: Menu-logo-fadein;
 }
 
 .App-header {
@@ -84,6 +84,18 @@
   width: 100%;
 }
 
+@-webkit-keyframes Menu-logo-Slidein {
+  from {
+    margin-right: 85%;
+    background-color: #000c2900;
+  }
+
+  to {
+    margin-right: 3vh;
+    background-color: #000c296e;
+  }
+}
+
 @keyframes Menu-logo-Slidein {
   from {
     margin-right: 85%;
@@ -93,6 +105,16 @@
   to {
     margin-right: 3vh;
     background-color: #000c296e;
+  }
+}
+
+@-webkit-keyframes Menu-logo-fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1.0;
   }
 }
 
