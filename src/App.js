@@ -4,9 +4,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-    <Menu />
+      <Menu />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" /> /* Why not render?? */
+        <img src={logo} className="App-logo" alt="logo" />
       </header>
     </div>
   );
@@ -22,4 +22,4 @@ function Menu() {
   );
 }
 
-export {App, Menu};
+export default App;
