@@ -6,14 +6,21 @@ function App() {
   return (
     <div>
       <div className="App">
-        <header className="App-header">
-          <div className="App-Thumbnail">
-            <img src={bg} className="App-background" alt="logo" />
-          </div>
-        </header>
+        <AppThumbnail />
       </div>
       <Menu />
     </div>
+  );
+}
+
+function AppThumbnail()
+{
+  return(
+    <header className="App-header">
+      <div className="App-Thumbnail">
+        <img src={bg} className="App-background" alt="logo" />
+      </div>
+    </header>
   );
 }
 
@@ -24,9 +31,13 @@ function Menu() {
         <img src={logo} className="Menu-logo" alt="logo" />
       </div>
       <div className="MenuItems">
-        <MenuItem itemName="Item01" />
-        <MenuItem itemName="Item02" />
-        <MenuItem itemName="Item03" />
+        <MenuItem itemName="행사 소개" />
+        <MenuItem itemName="서클 참가" />
+        <MenuItem itemName="통신 판매" />
+        <MenuItem itemName="코스프레" />
+        <MenuItem itemName="카메라" />
+        <MenuItem itemName="일반 방문" />
+        <MenuItem itemName="COVID-19" />
       </div>
     </div>
   );
