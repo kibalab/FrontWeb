@@ -24,17 +24,20 @@ function Menu() {
         <img src={logo} className="Menu-logo" alt="logo" />
       </div>
       <div className="MenuItems">
-        <a className="MenuItems-item">
-          HELLO
-        </a>
-        <a className="MenuItems-item">
-          HELLO
-        </a>
-        <a className="MenuItems-item">
-          HELLO
-        </a>
+        <MenuItem itemName="Item01" />
+        <MenuItem itemName="Item02" />
+        <MenuItem itemName="Item03" />
       </div>
     </div>
+  );
+}
+
+function MenuItem(prop)
+{
+  return (
+    <a className="MenuItems-item">
+      {prop.itemName}
+    </a>
   );
 }
 

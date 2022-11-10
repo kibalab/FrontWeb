@@ -6,11 +6,13 @@
   z-index: 99;
 
   position: sticky;
-  top: 1vh;
+  top: 1em;
   right: 0px;
 
   border-radius: 6vh;
-  margin: 3vh;
+  margin-top: 3em;
+  margin-right: 6em;
+  margin-left: 6em;
   height: 7vh;
   line-height: 6vh;
   background-color: #000c296e;
@@ -37,6 +39,9 @@
   text-align: center;
   color: aliceblue;
   border-radius: 10px;
+
+  animation-duration: 2s;
+  animation-name: MenuItems-item-fadein;
 }
 
 .App-background {
@@ -91,7 +96,7 @@
   }
 
   to {
-    margin-right: 3vh;
+    margin-right: 6em;
     background-color: #000c296e;
   }
 }
@@ -101,6 +106,18 @@
     opacity: 0;
   }
 
+  to {
+    opacity: 1.0;
+  }
+}
+
+@keyframes MenuItems-item-fadein {
+  from {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
   to {
     opacity: 1.0;
   }
