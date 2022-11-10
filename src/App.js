@@ -35,9 +35,9 @@ function Menu() {
 function MenuItem(prop)
 {
   return (
-    <a className="MenuItems-item">
+    <div className="MenuItems-item">
       {prop.itemName}
-    </a>
+    </div>
   );
 }
 
