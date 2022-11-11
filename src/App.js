@@ -1,5 +1,8 @@
-import logo from './Logo.png';
+import logo from './umiket.png';
 import bg from './background.jpg';
+import rin from './Rin.webp';
+import dot from './Dot.png';
+import keyIsland from './Key Island9.png';
 import './App.css';
 
 function App() {
@@ -18,9 +21,14 @@ function AppThumbnail()
   return(
     <header className="App-header">
       <div className="App-Thumbnail">
-        <div className='App-Thumbnail-Title'>Title</ div>
-        <div className='App-Thumbnail-SubTitle'>SubTitle</ div>
-        <img src={bg} className="App-background" alt="logo" />
+        <img src={rin} className="App-background" alt="thumbnail" />
+        
+        <img style={{ backgroundImage: dot}}  className="App-background-Screen" alt="thumbnailScreen" />
+        <div className='App-Thumbnail-Center'>
+          <img src={keyIsland} className="App-Thumbnail-Title" alt="thumbnail" /><br/>
+          <div style={{height: "1rem"}} className="App" /> <br/>
+          <div className='App-Thumbnail-SubTitle'>2022-11-11 (Fri) ~ 2022-12-11 (Sun)</ div>
+        </div>
       </div>
     </header>
   );
