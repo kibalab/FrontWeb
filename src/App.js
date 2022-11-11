@@ -1,5 +1,5 @@
 import logo from './umiket.png';
-import bg from './background.jpg';
+//import bg from './background.jpg';
 import rin from './Rin.webp';
 import dot from './Dot.png';
 import keyIsland from './Key Island9.png';
