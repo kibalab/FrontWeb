@@ -10,6 +10,15 @@
   font-family: 'Jua', sans-serif;
 }
 
+.MenuArea
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .Menu {
   z-index: 99;
 
@@ -41,6 +50,9 @@
   white-space: nowrap;
 
   width: 100%;
+
+  
+  font-weight: 600;
 }
 .MenuItems-item {
   text-align: center;
@@ -52,7 +64,6 @@
 }
 
 .App-background {
-  position: relative;
   z-index: -1;
   top: 0;
   left: 0;
@@ -88,14 +99,26 @@
   flex-direction: row;
 }
 
-.App-Thumbnail {
-  box-shadow: rgba(172, 172, 172, 0.5) 30px 30px 100px inset;
+.App-Thumbnail-Title {
+  z-index: 3;
   font-size: 0;
-  top: 0;
-  position: absolute;
+  position:absolute;
   width: 100%;
 }
 
+.App-Thumbnail-SubTitle {
+  z-index: 3;
+  font-size: 0;
+  position:absolute;
+  width: 100%;
+}
+
+.App-Thumbnail {
+  font-size: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
 @keyframes Menu-logo-Slidein {
   from {
     margin-right: 85%;

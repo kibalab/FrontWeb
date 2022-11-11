@@ -18,6 +18,8 @@ function AppThumbnail()
   return(
     <header className="App-header">
       <div className="App-Thumbnail">
+        <div className='App-Thumbnail-Title'>Title</ div>
+        <div className='App-Thumbnail-SubTitle'>SubTitle</ div>
         <img src={bg} className="App-background" alt="logo" />
       </div>
     </header>
@@ -26,6 +28,7 @@ function AppThumbnail()
 
 function Menu() {
   return (
+    <div className="MenuArea">
     <div className="Menu">
       <div className="Menu-header">
         <img src={logo} className="Menu-logo" alt="logo" />
@@ -39,6 +42,7 @@ function Menu() {
         <MenuItem itemName="일반 방문" />
         <MenuItem itemName="COVID-19" />
       </div>
+    </div>
     </div>
   );
 }
